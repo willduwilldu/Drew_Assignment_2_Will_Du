@@ -1,0 +1,202 @@
+@import 'styles/brand.less';
+@import 'styles/typography.less';
+@import 'styles/grid.less';
+@import 'styles/mixins.less';
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header {
+	.column(12);
+	background: @black;
+	padding: 15px 0 15px 15px;
+	position: relative;
+		img {
+			display: block;
+			left: 140px;
+			top: 5px;
+			position: absolute;
+			.rotate;
+			width: 50px;
+		}
+		h1 {
+			float: left;
+				a {
+					color: @pink;
+					text-transform: uppercase;
+					text-decoration: none;
+					.text-shadow;
+			}
+		}
+			nav ul {
+				padding: 5px 80px 0 0;
+				float: right;
+					li {
+						padding: 0 10px;
+						display: inline;
+							a {
+								text-decoration: none;
+								color: @white;
+							}
+
+							a:hover {
+								color: @pink;
+							}
+					}
+
+			}
+}
+
+
+// MAIN PAGE
+// -------------------------
+
+article#maincolumn {
+	.column(8);
+		img {
+		width: @imagesize;
+	}
+}
+
+section#sidebar {
+	.column(4);
+		h2 {
+		padding: 10px 0;
+	}
+	ul {
+		padding-bottom: 10px;
+			li.tour-heading {
+				.BoxShadow(2px, 5px);
+				.border-radius;
+				padding: @heading;
+				margin-bottom: 10px;
+				color: @white;
+				background: @black;
+			}
+			a {
+				color: @grey;
+				text-decoration: none;
+			}
+			li.small-font {
+				font-size: 12px;
+			}
+	}
+	a.more {
+		display: block;
+		float: right;
+		color: @black;
+	}
+}
+
+footer {
+	.column(12);
+	background: @black;
+	padding: 10px;
+		p {
+			font-size: 12px;
+			text-align: center;
+			color: @white;
+		}
+}
+
+
+// ALBUM PAGE
+// -------------------------
+
+article#album-tracklist {
+	.column(6);
+	padding: 20px 0;
+	h2 {
+			text-transform: uppercase;
+			padding-bottom: 5px;
+	}
+	h3 {
+			padding-bottom: 3px;
+	}
+	ul li {
+		padding: 5px 0;
+			span {
+				font-style: italic;
+			}
+	}
+	ul li:nth-child(odd) {
+		background:#ddd;
+	}
+}
+
+
+
+// TOURS PAGE
+// -------------------------
+
+section#album-sidebar {
+	.column(6);
+	padding: 20px 0;
+		img {
+		width: @imagesize;
+	}
+}
+
+article#tours-main {
+	.column(6);
+		padding: 20px 0;
+			h2 {
+				padding-bottom: 10px;
+			}
+			ul {
+				padding-bottom: 10px;
+					li.tour-heading {
+						background: @black;
+						padding: @heading;
+						.BoxShadow(2px, 5px);
+						.border-radius;
+						margin-bottom: 10px;
+						color: @white;
+					}
+					li a {
+						color: @grey;
+						text-decoration: none;
+					}
+					li.small-font {
+						font-size: 12px;
+					}
+			}
+}
+
+section#tours-sidebar {
+	.column(6);
+		padding: 20px 0;
+			img {
+				width: @imagesize;
+			}
+			p {
+			padding: 20px 10px;
+			line-height: 30px;
+			background: @black;
+			color: @white;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
